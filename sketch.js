@@ -57,11 +57,18 @@ function draw() {
 
   playerArcher.display();
 
+    // Title
+  fill("#FFFF");
+  textAlign("center");
+  textSize(40);
+  text("EPIC ARCHERY", width / 2, 100);
+
   for (var i = 0; i < playerArrows.length; i++) {
     if (playerArrows[i] !== undefined) {
       playerArrows[i].display();
     }
   }
+}
 
 
   function keyPressed() {
@@ -89,9 +96,4 @@ function draw() {
     }
   }
 
-  // Title
-  fill("#FFFF");
-  textAlign("center");
-  textSize(40);
-  text("EPIC ARCHERY", width / 2, 100);
-}
+
